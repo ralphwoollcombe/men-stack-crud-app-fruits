@@ -10,7 +10,7 @@
     <a href="/fruits/new"> New Fruits </a>
     <ul>
         <% fruits.forEach((fruit) => { %>
-        <li><%= fruit.name %></li>
+        <li><a href="/fruits/<%= fruit.id %>"><%= fruit.name %></a></li>
        <% });  %>
     </ul>
 </body>
